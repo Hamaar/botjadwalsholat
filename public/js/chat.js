@@ -152,7 +152,7 @@ socket.on("connect", function () {
       });
     } else {
       createUserMessage(msg);
-      console.log("Isi Message", msg);
+      // console.log("Isi Message", msg);
     }
   });
 

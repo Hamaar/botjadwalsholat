@@ -39,10 +39,10 @@ io.on("connection", function (socket) {
       if (!err) {
         //console.log(res);
         context = res.result.context;
-        console.log("Isi respon Message", res.result.output);
-        console.log("Respon title", res.result.output.generic[0].title);
-        console.log("Respon desc", res.result.output.generic[0].description);
-        console.log("Respon options", res.result.output.generic[0].options);
+        // console.log("Isi respon Message", res.result.output);
+        // console.log("Respon title", res.result.output.generic[0].title);
+        // console.log("Respon desc", res.result.output.generic[0].description);
+        // console.log("Respon options", res.result.output.generic[0].options);
 
         if (res.result.output.generic.length > 0) {
           switch (res.result.output.generic[0].response_type) {
@@ -59,11 +59,11 @@ io.on("connection", function (socket) {
               desc_response = res.result.output.generic[0].description;
               options_response = res.result.output.generic[0].options;
               // List the options by label.
-              for (let i = 0; i < options_response.length; i++) {
-                console.log(
-                  (i + 1).toString() + ". " + options_response[i].label
-                );
-              }
+              // for (let i = 0; i < options_response.length; i++) {
+              //   console.log(
+              //     (i + 1).toString() + ". " + options_response[i].label
+              //   );
+              // }
               break;
           }
 
